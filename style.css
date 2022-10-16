@@ -5,6 +5,10 @@
 }
 
 body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "cabecalho";
   background-color: #8FBCB3;
   padding: 15px;
   display: flex;
@@ -28,8 +32,7 @@ body {
   padding: 15px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 30px;
-  font: bold;
-  border: solid black 3px;
+  grid-area: cabecalho;
   justify-content: center;
   max-width: 400px;
   margin: auto auto;
@@ -47,6 +50,5 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: auto auto;
   }
 }/*# sourceMappingURL=style.css.map */
